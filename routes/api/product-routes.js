@@ -18,7 +18,7 @@ router.get('/', (req, res) => {
       as: "tag"
     }
   ]
-  }).then((results) => res.json(results))
+  }).then((result) => res.json(result))
 });
 
 // get one product
@@ -119,7 +119,7 @@ router.delete('/:id', (req, res) => {
     where: {
       id: req.params.id
     }
-  }).then((results) => res.json(results))
+  }).then((result) => res.json(result))
 });
 
 module.exports = router;
